@@ -4,7 +4,7 @@
 # This allows us to decrypt the device in recovery and still be
 # able to unmount /vendor when we are done.
 
-mount -t ext4 -o ro /dev/block/bootdevice/by-name/system /system
+mount -t ext4 -o ro /dev/block/platform/soc/624000.ufshc/by-name/system /system
 
 cp /system/vendor/lib64/libQSEEComAPI.so /sbin/libQSEEComAPI.so
 cp /system/vendor/lib64/hw/keystore.msm8996.so /sbin/keystore.msm8996.so
